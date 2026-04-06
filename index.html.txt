@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کارگاه آموزشی فارنزیک OT</title>
+
+  <style>
+    @font-face {
+       font-family: "vazirmatn";
+       src: url("Vazirmatn-Regular.woff2") format("woff2");
+    }
+    body {
+      font-family: Vazirmatn, sans-serif;
+      background: #f0f6ff;
+      color: #1e3a8a;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 750px;
+      width: 90%;
+      background: white;
+      margin-top: 2rem;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      color: #1d4ed8;
+    }
+    header p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      color: #2563eb;
+    }
+    .header-image {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 1rem;
+      margin: 1rem 0;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      color: #1d4ed8;
+      border-right: 4px solid #3b82f6;
+      padding-right: 0.5rem;
+    }
+    details {
+      background: #eff6ff;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      padding: 0.5rem 1rem;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #1d4ed8;
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+    details[open] {
+      background: #dbeafe;
+    }
+    details p {
+      text-align: justify;
+      line-height: 1.8;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: #eff6ff;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-decoration: none;
+      color: #1d4ed8;
+      font-weight: 600;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      background: #dbeafe;
+    }
+    .card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 0.5rem;
+    }
+    .channel-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 1rem auto;
+      padding: 0.7rem 1.5rem;
+      background: #1d4ed8;
+      color: white;
+      border-radius: 0.75rem;
+      text-decoration: none;
+      font-weight: 600;
+      width: fit-content;
+      transition: background 0.2s ease;
+    }
+    .channel-link:hover {
+      background: #1e40af;
+    }
+    .channel-link img {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>کارگاه آموزشی فارنزیک OT</h1>
+      <!-- <p><br>بیست و دومین کنفرانس بین‌المللی انجمن رمز ایران</p> -->
+      <!-- <img class="header-image" src="https://s2data.com/wp-content/uploads/2022/07/AdobeStock_480199782-1536x768.jpeg.webp" alt="OT Forensics"> -->
+      <img class="header-image" src="header.jpeg" alt="OT Forensics"> 
+    </header>
+ 
+    <details>
+      <summary>سرفصل مطالب کارگاه</summary>
+      <ul>
+        <li>معرفی فارنزیک OT</li>
+        <li>آشنایی با ذخیره‌سازهای داده در تجهیزات صنعتی</li>
+        <li>نحوه‌ی ارتباط با سخت‌افزار</li>
+        <li>مقدمه‌ای بر ابزارها و روش تحلیل Firmware</li>
+        <li>آشنایی با مفاهیم شبکه و انواع پروتکل‌های صنعتی</li>
+        <li>تحلیل یک پروتکل صنعتی نمونه</li>
+        <li>انجام یک پروژه عملی</li>
+      </ul>
+    </details>
+ 
+    <details>
+      <summary>چکیده کارگاه</summary>
+      <p>
+        سامانه‌های کنترل صنعتی (OT) به منظور کنترل و اتوماسیون فرآیند در صنایع بزرگ نفت، گاز، پتروشیمی، نیروگاهی و صنایع تولیدی مورد استفاده قرار می‌گیرند.
+        هرگونه مخاطره بر روی این سیستم‌ها دارای تبعات انسانی، اقتصادی، اجتماعی و محیط‌زیستی بسیار گسترده می‌باشد.
+        با توجه به افزایش روزافزون حملات سایبری بر روی سامانه‌های کنترل صنعتی و در معرض خطر قرار گرفتن این سیستم‌ها، اهمیت حفاظت از این سیستم‌ها دوچندان شده است.
+        از آنجا که سیستم‌های OT معمولاً ایزوله طراحی شده‌اند، حملات بر روی سیستم‌های صنعتی ترکیبی و پیچیده هستند.
+        فارنزیک OT روشی برای شناسایی نقاط نفوذ و آسیب‌پذیری‌هاست و درک عمیقی از رفتارهای سیستم‌های OT ایجاد می‌کند.
+        هدف از این کارگاه، آموزش مفاهیم پایه فارنزیک سیستم‌های کنترل صنعتی در سطح سخت‌افزار، شبکه و نرم‌افزار می‌باشد.
+      </p>
+    </details>
+ 
+    <a class="channel-link" href="https://ble.ir/join/7wrsZpcpN1" target="_blank">
+      <img src="https://bale.ai/uploads/bale.png?w=1920&q=75" alt="بله">
+      ورود به کانال بله
+    </a>
+ 
+    <h2>ابزارها</h2>
+    <div class="grid">
+      <a class="card" href="https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.83-installer.msi" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/PuTTY_Icon.svg/600px-PuTTY_Icon.svg.png" alt="Putty">
+        Putty
+      </a>
+      <a class="card" href="https://logic2api.saleae.com/download?os=windows&arch=x64" target="_blank">
+        <img src="https://canada1.discourse-cdn.com/flex030/uploads/saleae/original/1X/6400f6c7c6267887b402592a5035e7ce0242d30c.png" alt="Saleae">
+        Saleae Logic 2
+      </a>
+    </div>
+ 
+    <h2>منابع دیگر</h2>
+    <div class="grid">
+      <a class="card" href="./ChronoGuard-capture.sal" target="_blank">نمونه فایل کپچر</a>
+      <a class="card" href="./CH341SER.zip" target="_blank">درایور مبدل UART به USB با تراشه CH340</a>
+    </div>
+
+    <!-- <h2>فایل ارائه</h2>
+    <div class="grid">
+      <a class="card" href="https://ble.ir/join/7wrsZpcpN1" target="_blank">فارنزیک سخت‌افزاری سامانه‌های صنعتی</a>
+    </div> -->
+  </div>
+</body>
+
+</html>
+
+
